@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marine Biology</title>
+    <style>
+      body {
+        background: white;
+      }
+      .container {
+        border: 2px solid #53a8b6;
+        border-radius: 10px;
+        padding: 50%;
+        background: linear-gradient(
+          112.1deg,
+          rgb(32, 38, 57) 11.4%,
+          rgb(63, 76, 119) 70.2%
+        );
+      }
+      h1 {
+        text-align: center;
+        color: #ffc93c;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      h2 {
+        margin-bottom: 30px;
+        text-align: center;
+        color: #5fbdb0;
+
+        font-size: 30px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      img {
+        margin: 0 auto;
+        display: block;
+        max-width: 100%;
+        margin-top: 20px;
+        border-radius: 10px;
+        border: 2px solid #53a8b6;
+      }
+      p {
+        font-size: 15px;
+        text-align: justify;
+        margin-top: 20px;
+        display: block;
+        color: #53a8b6;
+      }
+      .main {
+        font-size: 20px;
+        text-align: justify;
+        display: block;
+        margin-bottom: 5%;
+        color: #3c9099;
+        border-radius: 10px;
+        border: 2px solid #53a8b6;
+        padding: 10px;
+        background: #e4f1fe;
+      }
+      .learn-more {
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px 0 10px;
+
+        color: white;
+        font-size: 15px;
+      }
+      .learn-more:hover {
+        color: white;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        color: white;
+        background-color: #3c9099;
+        font-size: 15px;
+        padding: 20px;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        opacity: 0.7;
+        cursor: pointer;
+        color: #3c9099;
+        background: white;
+      }
+      .footer {
+        text-align: center;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Ocean Illustrations</h1>
+      <h2>Issue No. 9</h2>
+      <p class="main">
+        Batoidea is a superorder of cartilaginous fishes, commonly known as
+        rays. They and their close relatives, the sharks, comprise the subclass
+        Elasmobranchii. There are around 600 species of manta rays around the
+        world! The spotted eagle rays, electric rays and manta rays are just a
+        few. Rays are distinguished from sharks by a flattened, disklike body,
+        with the five gill openings and the mouth generally located on the
+        underside.
+      </p>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/112/693/original/sketch1687717219040.png?1706477649"
+        alt="rays"
+      />
+
+      <br />
+      <a
+        href="https://www.britannica.com/animal/ray-fish"
+        target="_blank"
+        class="learn-more"
+      >
+        Learn More</a
+      >
+
+      <button class="buy-Button">SUBSCRIBE</button>
+      <br />
+      <p class="footer">This page was coded by J'ordaine Guiseppi-Ramos</p>
+    </div>
+    <script>
+      function button() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let permission = prompt(
+          "Would you like to receive other promotional emails?"
+        );
+
+        if (permission == "yes") {
+          alert(
+            "Thank you " +
+              name +
+              " for subscribing to the Ocean Illustrations newsletter! 🌊"
+          );
+        } else {
+          alert(
+            "Thank you " +
+              name +
+              " for subscribing to the Ocean Illustrations newsletter! 🌊 You have been excluded from receiving other promotional emails"
+          );
+        }
+      }
+      let buyButton = document.querySelector(".buy-Button");
+      buyButton.addEventListener("click", button);
+    </script>
+  </body>
+</html>
